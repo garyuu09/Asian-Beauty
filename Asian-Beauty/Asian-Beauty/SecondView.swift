@@ -11,10 +11,16 @@ import SwiftUI
 struct SecondView: View {
     var body: some View {
         VStack {
-            Image(systemName: "ggggg")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+            HStack{
+                Text("カンボジア")
+                    .multilineTextAlignment(.leading)
+                Spacer()
+            }
+            Image("アンコールワット")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
             Text("Hello, world!")
+            
         }
         .padding()
     }
