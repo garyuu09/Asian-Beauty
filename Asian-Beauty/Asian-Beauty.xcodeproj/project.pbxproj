@@ -11,6 +11,7 @@
 		BAB6FEAF29A1093B000F6F1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6FEAE29A1093B000F6F1F /* ContentView.swift */; };
 		BAB6FEB129A10940000F6F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB6FEB029A10940000F6F1F /* Assets.xcassets */; };
 		BAB6FEB429A10940000F6F1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB6FEB329A10940000F6F1F /* Preview Assets.xcassets */; };
+		BAB6FEBB29A10E2D000F6F1F /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6FEBA29A10E2D000F6F1F /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BAB6FEAE29A1093B000F6F1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BAB6FEB029A10940000F6F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAB6FEB329A10940000F6F1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAB6FEBA29A10E2D000F6F1F /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				BAB6FEAC29A1093B000F6F1F /* Asian_BeautyApp.swift */,
 				BAB6FEAE29A1093B000F6F1F /* ContentView.swift */,
+				BAB6FEBA29A10E2D000F6F1F /* SecondView.swift */,
 				BAB6FEB029A10940000F6F1F /* Assets.xcassets */,
 				BAB6FEB229A10940000F6F1F /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAB6FEBB29A10E2D000F6F1F /* SecondView.swift in Sources */,
 				BAB6FEAF29A1093B000F6F1F /* ContentView.swift in Sources */,
 				BAB6FEAD29A1093B000F6F1F /* Asian_BeautyApp.swift in Sources */,
 			);
