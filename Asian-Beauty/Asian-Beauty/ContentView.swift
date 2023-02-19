@@ -13,14 +13,15 @@ struct ContentView: View {
   
     var body: some View {
         VStack {
-            Text("Asian Beauty Womans")
+            Text("Asian Beauty Girls")
                 .font(.custom("DancingScript-Medium",size:30))
                         
             ScrollView(.horizontal) {
                 HStack {
+                    Group{//インド
                         Button(action: {
                             self.isIndView.toggle()
-                            self.no = 0
+                            self.no = Country.indo.rawValue
                         }){
                             ChildView(imageName: "kiara-advani", countryName: "India")
                         }
@@ -28,26 +29,31 @@ struct ContentView: View {
                         {
                             SecondView(no: $no, isIndView: $isIndView)
                         }
-                    Button(action: {
-                        self.isIndView.toggle()
-                        self.no = 1
-                    }){
-                       ChildView(imageName: "lisa", countryName: "Thailand")
                     }
-                    .fullScreenCover(isPresented: $isIndView)
-                    {
-                        SecondView(no: $no, isIndView: $isIndView)
-                        
+                    Group{//タイ
+                        Button(action: {
+                            self.isIndView.toggle()
+                            self.no = Country.thai.rawValue
+                        }){
+                            ChildView(imageName: "lisa", countryName: "Thailand")
+                        }
+                        .fullScreenCover(isPresented: $isIndView)
+                        {
+                            SecondView(no: $no, isIndView: $isIndView)
+                            
+                        }
                     }
-                    Button(action: {
-                        self.isIndView.toggle()
-                        self.no = 2
-                    }){
-                       ChildView(imageName: "angelica", countryName: "Philippines")
-                    }
-                    .fullScreenCover(isPresented: $isIndView)
-                    {
-                        SecondView(no: $no, isIndView: $isIndView)
+                    Group{//フィリピン
+                        Button(action: {
+                            self.isIndView.toggle()
+                            self.no = Country.philippines.rawValue
+                        }){
+                            ChildView(imageName: "angelica", countryName: "Philippines")
+                        }
+                        .fullScreenCover(isPresented: $isIndView)
+                        {
+                            SecondView(no: $no, isIndView: $isIndView)
+                        }
                     }
                 }
             }
@@ -83,9 +89,9 @@ struct ChildView: View {
     }
 }
 
-enum cName :Int{
+enum Country :Int{
     case indo = 0
     case thai = 1
-    case cambodia = 2
+    case philippines = 2
     
 }

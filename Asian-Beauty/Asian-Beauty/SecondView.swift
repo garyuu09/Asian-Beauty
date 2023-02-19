@@ -32,6 +32,10 @@ struct SecondView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 300,height: 200,alignment: .center)
                 }
+                Group{
+                    Text(data.BeautifulName[no])
+                        .font(.custom("DancingScript-Bold",size:30))
+                }
                 //見出し１（女優の詳細情報）
                 Group{
                     HStack{
