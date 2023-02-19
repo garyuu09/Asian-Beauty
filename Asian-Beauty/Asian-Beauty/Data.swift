@@ -7,5 +7,6 @@
 
 import Foundation
 struct Data {
-    
+    var country = "カンボジア"
+    var image = "アンコールワット"
 }
