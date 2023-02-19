@@ -103,7 +103,7 @@ struct BeautyInfo:View{
     let infoTextWidht:CGFloat = 300
     let infoTextHeigh:CGFloat = 200
     var body:some View{
-        Text(data.thirdInfo3[no])
+        Text(data.contentInfo[no])
             .frame(width: infoTextWidht, height: infoTextHeigh, alignment: .center)
             .minimumScaleFactor(1)
             .lineLimit(3)

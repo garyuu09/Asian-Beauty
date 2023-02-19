@@ -63,7 +63,7 @@ struct SecondView: View {
                     Divider()
                     Text(data.thirdInfo1[no])
                     Text(data.thirdInfo2[no])
-                    Text(data.thirdInfo3[no])
+//                    Text(data.thirdInfo3[no])
 
                 }
                 //地図
