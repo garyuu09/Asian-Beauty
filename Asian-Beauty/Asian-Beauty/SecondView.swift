@@ -30,11 +30,13 @@ struct SecondView: View {
                     Image(data.image[no])
                         .resizable()
                         .aspectRatio(contentMode: .fit)
+                        .frame(width: 1000,height: 200,alignment: .center)
                 }
-                //見出し１
+                //見出し１（女優の詳細情報）
                 Group{
                     HStack{
-                        Text(data.title1[no])
+                        Text("Women's Info")
+                            .foregroundColor(Color.black)
                         Spacer()
                     }
                     Divider()
@@ -42,22 +44,23 @@ struct SecondView: View {
                     Text(data.information2[no])
                     Text(data.information3[no])
                 }
-                //見出し２
+//                //見出し２
+//                Group{
+//                    HStack{
+//                        Text(data.title2[no])
+//                        Spacer()
+//                    }
+//                    Divider()
+//                    Text(data.secondInfo1[no])
+//                    Text(data.secondInfo2[no])
+//                    Text(data.secondInfo3[no])
+//
+//                }
+                //見出し3(国の基本情報)
                 Group{
                     HStack{
-                        Text(data.title2[no])
-                        Spacer()
-                    }
-                    Divider()
-                    Text(data.secondInfo1[no])
-                    Text(data.secondInfo2[no])
-                    Text(data.secondInfo3[no])
-                    
-                }
-                //見出し3
-                Group{
-                    HStack{
-                        Text(data.title3[no])
+                        Text("Country Info")
+                            .foregroundColor(Color.black)
                         Spacer()
                     }
                     Divider()
