@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("アジアンビューティー")
-            ScrollView(.horizontal) {
+            ScrollView {
                 HStack {
                     Button(action: {
                         self.isIndView.toggle()
@@ -24,7 +24,7 @@ struct ContentView: View {
                     }
                     .fullScreenCover(isPresented: $isIndView)
                     {
-                        SecondView(no: $no)
+                        SecondView(no: $no, isIndView: $isIndView)
                     }
                     Button(action: {
                         self.isIndView.toggle()
@@ -34,7 +34,7 @@ struct ContentView: View {
                     }
                     .fullScreenCover(isPresented: $isIndView)
                     {
-                        SecondView(no: $no)
+                        SecondView(no: $no, isIndView: $isIndView)
                         
                     }
                     Button(action: {
@@ -45,7 +45,7 @@ struct ContentView: View {
                     }
                     .fullScreenCover(isPresented: $isIndView)
                     {
-                        SecondView(no: $no)
+                        SecondView(no: $no, isIndView: $isIndView)
                     }
                 }
             }
