@@ -23,9 +23,10 @@ struct SecondView: View {
                 Group{
                     HStack{
                         Text(data.country[no])
+                            .font(.custom("DancingScript-Medium",size:30))
                         Spacer()
                     }
-                    
+                    .padding()
                     Image(data.image[no])
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -35,35 +36,25 @@ struct SecondView: View {
                 Group{
                     HStack{
                         Text("Beautiful Girl")
+                            .font(.custom("DancingScript-Medium",size:30))
                         Spacer()
                     }
+                    .padding()
                     Divider()
                     Text(data.information1[no])
-                    Text(data.information2[no])
-                    Text(data.information3[no])
                 }
-//                //見出し２
-//                Group{
-//                    HStack{
-//                        Text(data.title2[no])
-//                        Spacer()
-//                    }
-//                    Divider()
-//                    Text(data.secondInfo1[no])
-//                    Text(data.secondInfo2[no])
-//                    Text(data.secondInfo3[no])
-//
-//                }
-                //見出し3(国の基本情報)
+
+                //見出し2(国の基本情報)
                 Group{
                     HStack{
                         Text("Country Info")
+                            .font(.custom("DancingScript-Medium",size:30))
                         Spacer()
                     }
+                    .padding()
                     Divider()
-                    Text(data.thirdInfo1[no])
-                    Text(data.thirdInfo2[no])
-                    Text(data.thirdInfo3[no])
+                    Text(data.secondInfo1[no])
+      
 
                 }
                 //地図
@@ -81,6 +72,7 @@ struct SecondView: View {
                         .cornerRadius(20)
                         .background(Color.blue)
                         .foregroundColor(Color.white)
+                        .font(.custom("DancingScript-Medium",size:20))
                 }
             }
             .padding()

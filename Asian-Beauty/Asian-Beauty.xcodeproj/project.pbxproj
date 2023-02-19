@@ -14,6 +14,7 @@
 		BAB6FEBB29A10E2D000F6F1F /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6FEBA29A10E2D000F6F1F /* SecondView.swift */; };
 		BAEE124129A1AA6200F9C19A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE124029A1AA6200F9C19A /* Data.swift */; };
 		BAEE124629A1E8E100F9C19A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE124529A1E8E100F9C19A /* MapView.swift */; };
+		BAEE124D29A24A8400F9C19A /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAEE124C29A24A8400F9C19A /* DancingScript-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BAEE124029A1AA6200F9C19A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		BAEE124229A1CDD400F9C19A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BAEE124529A1E8E100F9C19A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BAEE124C29A24A8400F9C19A /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				BAEE124229A1CDD400F9C19A /* Info.plist */,
 				BAB6FEAC29A1093B000F6F1F /* Asian_BeautyApp.swift */,
+				BAEE124B29A24A6500F9C19A /* New Group */,
 				BAB6FEAE29A1093B000F6F1F /* ContentView.swift */,
 				BAB6FEBA29A10E2D000F6F1F /* SecondView.swift */,
 				BAEE124029A1AA6200F9C19A /* Data.swift */,
@@ -76,6 +79,14 @@
 				BAB6FEB329A10940000F6F1F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAEE124B29A24A6500F9C19A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				BAEE124C29A24A8400F9C19A /* DancingScript-VariableFont_wght.ttf */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAEE124D29A24A8400F9C19A /* DancingScript-VariableFont_wght.ttf in Resources */,
 				BAB6FEB429A10940000F6F1F /* Preview Assets.xcassets in Resources */,
 				BAB6FEB129A10940000F6F1F /* Assets.xcassets in Resources */,
 			);

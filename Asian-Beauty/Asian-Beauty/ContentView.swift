@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Asian Beauty Womans")
-                .font(.custom("DancingScript-Bold",size:30))
+                .font(.custom("DancingScript-Medium",size:30))
                         
             ScrollView(.horizontal) {
                 HStack {
@@ -77,7 +77,7 @@ struct ChildView: View {
                     .frame(width: 250.0, height: 300.0, alignment: .center)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
             Text("\(countryName)")
-                    .font(.system(size: 14.0))
+                .font(.custom("DancingScript-Medium",size:20))
                     .fontWeight(.thin)
         }
     }
