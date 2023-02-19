@@ -11,6 +11,7 @@ import SwiftUI
 struct SecondView: View {
     var data = Data()
     @Binding var no:Int
+    @Binding var isIndView:Bool
     
     var body: some View {
         ScrollView() {
@@ -57,6 +58,18 @@ struct SecondView: View {
                 MapView(searchKey: data.country[no])
                     .frame(width: 300,height: 200,alignment: .center)
                     .cornerRadius(20)
+
+                Spacer()
+                // 戻るボタン
+                Button(action: {
+                    isIndView = false
+                }) {
+                    Text("Back")
+                        .frame(width: 100,height: 20)
+                        .cornerRadius(20)
+                        .background(Color.blue)
+                        .foregroundColor(Color.white)
+                }
             }
             .padding()
         }
