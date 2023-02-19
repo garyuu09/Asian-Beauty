@@ -14,19 +14,20 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Asian Beauty Womans")
-                .font(.title)
+                .font(.custom("DancingScript-Bold",size:30))
+                        
             ScrollView(.horizontal) {
                 HStack {
-                    Button(action: {
-                        self.isIndView.toggle()
-                        self.no = 0
-                    }){
-                       ChildView(imageName: "kiara-advani", countryName: "India")
-                    }
-                    .fullScreenCover(isPresented: $isIndView)
-                    {
-                        SecondView(no: $no, isIndView: $isIndView)
-                    }
+                        Button(action: {
+                            self.isIndView.toggle()
+                            self.no = 0
+                        }){
+                            ChildView(imageName: "kiara-advani", countryName: "India")
+                        }
+                        .fullScreenCover(isPresented: $isIndView)
+                        {
+                            SecondView(no: $no, isIndView: $isIndView)
+                        }
                     Button(action: {
                         self.isIndView.toggle()
                         self.no = 1

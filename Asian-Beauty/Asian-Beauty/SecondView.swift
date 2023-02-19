@@ -23,20 +23,18 @@ struct SecondView: View {
                 Group{
                     HStack{
                         Text(data.country[no])
-                            .multilineTextAlignment(.leading)
                         Spacer()
                     }
                     
                     Image(data.image[no])
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 1000,height: 200,alignment: .center)
+                        .frame(width: 300,height: 200,alignment: .center)
                 }
                 //見出し１（女優の詳細情報）
                 Group{
                     HStack{
-                        Text("Women's Info")
-                            .foregroundColor(Color.black)
+                        Text("Beautiful Girl")
                         Spacer()
                     }
                     Divider()
@@ -60,7 +58,6 @@ struct SecondView: View {
                 Group{
                     HStack{
                         Text("Country Info")
-                            .foregroundColor(Color.black)
                         Spacer()
                     }
                     Divider()
