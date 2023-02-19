@@ -11,7 +11,7 @@ import SwiftUI
 struct SecondView: View {
     var data = Data()
     @Binding var no:Int
-    @Binding var isIndView:Bool
+    @Binding var isCountryView:Bool
     
     var body: some View {
         ScrollView() {
@@ -69,7 +69,7 @@ struct SecondView: View {
                 Spacer()
                 // 戻るボタン
                 Button(action: {
-                    isIndView = false
+                    isCountryView = false
                 }) {
                     Text("Back")
                         .frame(width: 100,height: 20)
