@@ -34,25 +34,37 @@ struct SecondView: View {
                 //見出し１
                 Group{
                     HStack{
-                        Text("見出し１")
+                        Text(data.title1[no])
                         Spacer()
                     }
                     Divider()
                     Text(data.information1[no])
                     Text(data.information2[no])
                     Text(data.information3[no])
-                    Divider()
                 }
                 //見出し２
                 Group{
                     HStack{
-                        Text("見出し2")
+                        Text(data.title2[no])
                         Spacer()
                     }
+                    Divider()
                     Text(data.secondInfo1[no])
                     Text(data.secondInfo2[no])
                     Text(data.secondInfo3[no])
                     
+                }
+                //見出し3
+                Group{
+                    HStack{
+                        Text(data.title3[no])
+                        Spacer()
+                    }
+                    Divider()
+                    Text(data.thirdInfo1[no])
+                    Text(data.thirdInfo2[no])
+                    Text(data.thirdInfo3[no])
+
                 }
                 //地図
                 MapView(searchKey: data.country[no])
