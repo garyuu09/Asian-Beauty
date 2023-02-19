@@ -13,7 +13,7 @@ struct ContentView: View {
   
     var body: some View {
         VStack {
-            Text("Asian Beauty Womans")
+            Text("Asian Beauty Girls")
                 .font(.custom("DancingScript-Medium",size:30))
                         
             ScrollView(.horizontal) {
