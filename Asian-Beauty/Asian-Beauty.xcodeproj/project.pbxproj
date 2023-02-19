@@ -23,7 +23,7 @@
 		BAB6FEB329A10940000F6F1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BAB6FEBA29A10E2D000F6F1F /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		BAEE124029A1AA6200F9C19A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-
+		BAEE124229A1CDD400F9C19A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +56,7 @@
 		BAB6FEAB29A1093B000F6F1F /* Asian-Beauty */ = {
 			isa = PBXGroup;
 			children = (
+				BAEE124229A1CDD400F9C19A /* Info.plist */,
 				BAB6FEAC29A1093B000F6F1F /* Asian_BeautyApp.swift */,
 				BAB6FEAE29A1093B000F6F1F /* ContentView.swift */,
 				BAB6FEBA29A10E2D000F6F1F /* SecondView.swift */,
@@ -279,6 +280,7 @@
 				DEVELOPMENT_TEAM = 368394UMH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Asian-Beauty/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,6 +310,7 @@
 				DEVELOPMENT_TEAM = 368394UMH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Asian-Beauty/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
