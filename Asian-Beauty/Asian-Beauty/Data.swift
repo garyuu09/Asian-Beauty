@@ -6,14 +6,14 @@
 //
 
 import Foundation
-class Data :ObservableObject {
-    @Published var country = ["インド","タイ","カンボジア"]
-    @Published var image = ["タージマハル","アンコールワット","タイランド"]
-    var information1 = "情報１"
-    var information2 = "情報２"
-    var information3 = "情報３"
-    var secondInfo1 = "情報４"
-    var secondInfo2 = "情報５"
-    var secondInfo3 = "情報６"
+struct Data {
+    var country = ["インド","タイ","カンボジア"]
+    var image = ["タージマハル","アンコールワット","タイランド"]
+    var information1 = ["情報１","情報１","情報１"]
+    var information2 = ["情報2","情報22","情報222"]
+    var information3 = ["情報3","情33","情報333"]
+    var secondInfo1 = ["情報4","情報44","情報444"]
+    var secondInfo2 = ["情報5","情報55","情報555"]
+    var secondInfo3 = ["情報6","情報66","情報666"]
 
 }

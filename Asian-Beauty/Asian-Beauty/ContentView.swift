@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isIndView = false
-    
+    @State var no :Int = 0
+  
     var body: some View {
         VStack {
             Text("アジアンビューティー")
@@ -17,48 +18,34 @@ struct ContentView: View {
                 HStack {
                     Button(action: {
                         self.isIndView.toggle()
+                        self.no = 0
                     }){
                        ChildView(imageName: "indo-bijo", countryName: "インド")
                     }
                     .fullScreenCover(isPresented: $isIndView)
                     {
-                        SecondView(No: cName.indo.rawValue)
+                        SecondView(no: $no)
                     }
                     Button(action: {
                         self.isIndView.toggle()
+                        self.no = 1
                     }){
                        ChildView(imageName: "indo-bijo", countryName: "タイ")
                     }
                     .fullScreenCover(isPresented: $isIndView)
                     {
-                        SecondView(No: 1)
+                        SecondView(no: $no)
+                        
                     }
                     Button(action: {
                         self.isIndView.toggle()
+                        self.no = 2
                     }){
                        ChildView(imageName: "indo-bijo", countryName: "カンボジア")
                     }
                     .fullScreenCover(isPresented: $isIndView)
                     {
-                        SecondView(No: cName.cambodia.rawValue)
-                    }
-                    Button(action: {
-                        self.isIndView.toggle()
-                    }){
-                       ChildView(imageName: "indo-bijo", countryName: "インド")
-                    }
-                    .fullScreenCover(isPresented: $isIndView)
-                    {
-                        SecondView(No: 0)
-                    }
-                    Button(action: {
-                        self.isIndView.toggle()
-                    }){
-                       ChildView(imageName: "indo-bijo", countryName: "インド")
-                    }
-                    .fullScreenCover(isPresented: $isIndView)
-                    {
-                        SecondView(No: 0)
+                        SecondView(no: $no)
                     }
                 }
             }
