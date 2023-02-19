@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct SecondView: View {
+    let data = Data()
     var body: some View {
         VStack {
 //                現在Viewには、最大10個しかView(Textなど）を追加することが出来ない。
@@ -17,11 +18,13 @@ struct SecondView: View {
             //国
             Group{
                 HStack{
-                    Text("カンボジア")
+//                    Text("カンボジア")
+                    Text(data.country)
                         .multilineTextAlignment(.leading)
                     Spacer()
                 }
-                Image("アンコールワット")
+//                Image("アンコールワット")
+                Image(data.image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             }
