@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct SecondView: View {
+
     let data = Data()
     var body: some View {
         VStack {
