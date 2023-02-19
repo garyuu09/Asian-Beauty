@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isIndView = false
+    @State var isCountryView = false
     @State var no :Int = 0
   
     var body: some View {
@@ -20,39 +20,39 @@ struct ContentView: View {
                 HStack {
                     Group{//インド
                         Button(action: {
-                            self.isIndView.toggle()
+                            self.isCountryView.toggle()
                             self.no = Country.indo.rawValue
                         }){
                             ChildView(imageName: "kiara-advani", countryName: "India")
                         }
-                        .fullScreenCover(isPresented: $isIndView)
+                        .fullScreenCover(isPresented: $isCountryView)
                         {
-                            SecondView(no: $no, isIndView: $isIndView)
+                            SecondView(no: $no, isCountryView: $isCountryView)
                         }
                     }
                     Group{//タイ
                         Button(action: {
-                            self.isIndView.toggle()
+                            self.isCountryView.toggle()
                             self.no = Country.thai.rawValue
                         }){
                             ChildView(imageName: "lisa", countryName: "Thailand")
                         }
-                        .fullScreenCover(isPresented: $isIndView)
+                        .fullScreenCover(isPresented: $isCountryView)
                         {
-                            SecondView(no: $no, isIndView: $isIndView)
+                            SecondView(no: $no, isCountryView: $isCountryView)
                             
                         }
                     }
                     Group{//フィリピン
                         Button(action: {
-                            self.isIndView.toggle()
+                            self.isCountryView.toggle()
                             self.no = Country.philippines.rawValue
                         }){
                             ChildView(imageName: "angelica", countryName: "Philippines")
                         }
-                        .fullScreenCover(isPresented: $isIndView)
+                        .fullScreenCover(isPresented: $isCountryView)
                         {
-                            SecondView(no: $no, isIndView: $isIndView)
+                            SecondView(no: $no, isCountryView: $isCountryView)
                         }
                     }
                 }
