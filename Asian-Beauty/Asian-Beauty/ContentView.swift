@@ -10,42 +10,69 @@ import SwiftUI
 struct ContentView: View {
     @State var isIndView = false
     @State var no :Int = 0
+    let infoTextWidht:CGFloat = 300
+    let infoTextHeigh:CGFloat = 200
+    var data = Data()
   
     var body: some View {
         VStack {
             Text("アジアンビューティー")
             ScrollView(.horizontal) {
                 HStack {
-                    Button(action: {
-                        self.isIndView.toggle()
-                        self.no = 0
-                    }){
-                       ChildView(imageName: "indo-bijo", countryName: "インド")
+                    Group{//インド
+                        VStack{
+                            Button(action: {
+                                self.isIndView.toggle()
+                                self.no = Country.indo.rawValue
+                            }){
+                                ChildView(imageName: "indo-bijo", countryName: "インド")
+                            }
+                            .fullScreenCover(isPresented: $isIndView)
+                            {
+                                SecondView(no: $no, isIndView: $isIndView)
+                            }
+                            Text(data.thirdInfo3[Country.indo.rawValue])
+                                .frame(width: infoTextWidht, height: infoTextHeigh, alignment: .center)
+                                .minimumScaleFactor(1)
+                                .lineLimit(3)
+                        }
                     }
-                    .fullScreenCover(isPresented: $isIndView)
-                    {
-                        SecondView(no: $no, isIndView: $isIndView)
+                    Group{//タイ
+                        VStack{
+                            Button(action: {
+                                self.isIndView.toggle()
+                                self.no = Country.thai.rawValue
+                            }){
+                                ChildView(imageName: "indo-bijo", countryName: "タイ")
+                            }
+                            .fullScreenCover(isPresented: $isIndView)
+                            {
+                                SecondView(no: $no, isIndView: $isIndView)
+                                
+                            }
+                            Text(data.thirdInfo3[Country.thai.rawValue])
+                                .frame(width: infoTextWidht, height: infoTextHeigh, alignment: .center)
+                                .minimumScaleFactor(1)
+                                .lineLimit(3)
+                        }
                     }
-                    Button(action: {
-                        self.isIndView.toggle()
-                        self.no = 1
-                    }){
-                       ChildView(imageName: "indo-bijo", countryName: "タイ")
-                    }
-                    .fullScreenCover(isPresented: $isIndView)
-                    {
-                        SecondView(no: $no, isIndView: $isIndView)
-                        
-                    }
-                    Button(action: {
-                        self.isIndView.toggle()
-                        self.no = 2
-                    }){
-                       ChildView(imageName: "indo-bijo", countryName: "カンボジア")
-                    }
-                    .fullScreenCover(isPresented: $isIndView)
-                    {
-                        SecondView(no: $no, isIndView: $isIndView)
+                    Group{//フィリピン
+                        VStack{
+                            Button(action: {
+                                self.isIndView.toggle()
+                                self.no = Country.Philippines.rawValue
+                            }){
+                                ChildView(imageName: "indo-bijo", countryName: "カンボジア")
+                            }
+                            .fullScreenCover(isPresented: $isIndView)
+                            {
+                                SecondView(no: $no, isIndView: $isIndView)
+                            }
+                            Text(data.thirdInfo3[Country.Philippines.rawValue])
+                                .frame(width: infoTextWidht, height: infoTextHeigh, alignment: .center)
+                                .minimumScaleFactor(1)
+                                .lineLimit(3)
+                        }
                     }
                 }
             }
@@ -80,9 +107,9 @@ struct ChildView: View {
     }
 }
 
-enum cName :Int{
+enum Country :Int{
     case indo = 0
     case thai = 1
-    case cambodia = 2
+    case Philippines = 2
     
 }
