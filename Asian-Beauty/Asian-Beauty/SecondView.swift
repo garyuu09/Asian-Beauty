@@ -36,9 +36,9 @@ struct SecondView: View {
                     Spacer()
                 }
                 Divider()
-                Text("情報1")
-                Text("情報2")
-                Text("情報3")
+                Text(data.information1)
+                Text(data.information2)
+                Text(data.information3)
                 Divider()
             }
             //見出し２
@@ -47,9 +47,10 @@ struct SecondView: View {
                     Text("見出し2")
                     Spacer()
                 }
-                Text("情報4")
-                Text("情報5")
-                Text("情報6")
+                Text(data.secondInfo1)
+                Text(data.secondInfo2)
+                Text(data.secondInfo3)
+
             }
         }
         .padding()
