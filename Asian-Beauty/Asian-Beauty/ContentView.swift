@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("アジアンビューティー")
-            ScrollView {
+            ScrollView(.horizontal) {
                 HStack {
                     Button(action: {
                         self.isIndView.toggle()
