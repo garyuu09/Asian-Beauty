@@ -22,7 +22,25 @@ struct ContentView: View {
                     }
                     .fullScreenCover(isPresented: $isIndView)
                     {
-                        SecondView()
+                        SecondView(No: cName.indo.rawValue)
+                    }
+                    Button(action: {
+                        self.isIndView.toggle()
+                    }){
+                       ChildView(imageName: "indo-bijo", countryName: "タイ")
+                    }
+                    .fullScreenCover(isPresented: $isIndView)
+                    {
+                        SecondView(No: 1)
+                    }
+                    Button(action: {
+                        self.isIndView.toggle()
+                    }){
+                       ChildView(imageName: "indo-bijo", countryName: "カンボジア")
+                    }
+                    .fullScreenCover(isPresented: $isIndView)
+                    {
+                        SecondView(No: cName.cambodia.rawValue)
                     }
                     Button(action: {
                         self.isIndView.toggle()
@@ -31,7 +49,7 @@ struct ContentView: View {
                     }
                     .fullScreenCover(isPresented: $isIndView)
                     {
-                        SecondView()
+                        SecondView(No: 0)
                     }
                     Button(action: {
                         self.isIndView.toggle()
@@ -40,25 +58,7 @@ struct ContentView: View {
                     }
                     .fullScreenCover(isPresented: $isIndView)
                     {
-                        SecondView()
-                    }
-                    Button(action: {
-                        self.isIndView.toggle()
-                    }){
-                       ChildView(imageName: "indo-bijo", countryName: "インド")
-                    }
-                    .fullScreenCover(isPresented: $isIndView)
-                    {
-                        SecondView()
-                    }
-                    Button(action: {
-                        self.isIndView.toggle()
-                    }){
-                       ChildView(imageName: "indo-bijo", countryName: "インド")
-                    }
-                    .fullScreenCover(isPresented: $isIndView)
-                    {
-                        SecondView()
+                        SecondView(No: 0)
                     }
                 }
             }
@@ -93,3 +93,9 @@ struct ChildView: View {
     }
 }
 
+enum cName :Int{
+    case indo = 0
+    case thai = 1
+    case cambodia = 2
+    
+}

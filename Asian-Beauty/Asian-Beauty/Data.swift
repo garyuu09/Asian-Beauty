@@ -6,9 +6,9 @@
 //
 
 import Foundation
-struct Data {
-    var country = "カンボジア"
-    var image = "アンコールワット"
+class Data :ObservableObject {
+    @Published var country = ["インド","タイ","カンボジア"]
+    @Published var image = ["タージマハル","アンコールワット","タイランド"]
     var information1 = "情報１"
     var information2 = "情報２"
     var information3 = "情報３"
