@@ -12,6 +12,7 @@
 		BAB6FEB129A10940000F6F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB6FEB029A10940000F6F1F /* Assets.xcassets */; };
 		BAB6FEB429A10940000F6F1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB6FEB329A10940000F6F1F /* Preview Assets.xcassets */; };
 		BAB6FEBB29A10E2D000F6F1F /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6FEBA29A10E2D000F6F1F /* SecondView.swift */; };
+		BAEE124129A1AA6200F9C19A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEE124029A1AA6200F9C19A /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		BAB6FEB029A10940000F6F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAB6FEB329A10940000F6F1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BAB6FEBA29A10E2D000F6F1F /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		BAEE124029A1AA6200F9C19A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 				BAB6FEAC29A1093B000F6F1F /* Asian_BeautyApp.swift */,
 				BAB6FEAE29A1093B000F6F1F /* ContentView.swift */,
 				BAB6FEBA29A10E2D000F6F1F /* SecondView.swift */,
+				BAEE124029A1AA6200F9C19A /* Data.swift */,
 				BAB6FEB029A10940000F6F1F /* Assets.xcassets */,
 				BAB6FEB229A10940000F6F1F /* Preview Content */,
 			);
@@ -143,6 +147,7 @@
 				BAB6FEBB29A10E2D000F6F1F /* SecondView.swift in Sources */,
 				BAB6FEAF29A1093B000F6F1F /* ContentView.swift in Sources */,
 				BAB6FEAD29A1093B000F6F1F /* Asian_BeautyApp.swift in Sources */,
+				BAEE124129A1AA6200F9C19A /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
