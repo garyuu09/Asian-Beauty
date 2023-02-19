@@ -13,24 +13,26 @@ struct ContentView: View {
   
     var body: some View {
         VStack {
-            Text("アジアンビューティー")
+            Text("Asian Beauty Womans")
+                .font(.custom("DancingScript-Bold",size:30))
+                        
             ScrollView(.horizontal) {
                 HStack {
-                    Button(action: {
-                        self.isIndView.toggle()
-                        self.no = 0
-                    }){
-                       ChildView(imageName: "indo-bijo", countryName: "インド")
-                    }
-                    .fullScreenCover(isPresented: $isIndView)
-                    {
-                        SecondView(no: $no, isIndView: $isIndView)
-                    }
+                        Button(action: {
+                            self.isIndView.toggle()
+                            self.no = 0
+                        }){
+                            ChildView(imageName: "kiara-advani", countryName: "India")
+                        }
+                        .fullScreenCover(isPresented: $isIndView)
+                        {
+                            SecondView(no: $no, isIndView: $isIndView)
+                        }
                     Button(action: {
                         self.isIndView.toggle()
                         self.no = 1
                     }){
-                       ChildView(imageName: "indo-bijo", countryName: "タイ")
+                       ChildView(imageName: "lisa", countryName: "Thailand")
                     }
                     .fullScreenCover(isPresented: $isIndView)
                     {
@@ -41,7 +43,7 @@ struct ContentView: View {
                         self.isIndView.toggle()
                         self.no = 2
                     }){
-                       ChildView(imageName: "indo-bijo", countryName: "カンボジア")
+                       ChildView(imageName: "angelica", countryName: "Philippines")
                     }
                     .fullScreenCover(isPresented: $isIndView)
                     {
@@ -71,8 +73,9 @@ struct ChildView: View {
         VStack {
             Image("\(imageName)")
                     .resizable()
-                    .frame(width: 250.0, height: 220.0, alignment: .center)
-                    .clipShape(Circle())
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 250.0, height: 300.0, alignment: .center)
+                    .clipShape(RoundedRectangle(cornerRadius: 15))
             Text("\(countryName)")
                     .font(.system(size: 14.0))
                     .fontWeight(.thin)

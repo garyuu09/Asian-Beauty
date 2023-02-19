@@ -4,5 +4,14 @@
 <dict>
 	<key>Scene configuration</key>
 	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string></string>
+		<string>DancingScript-VariableFont_wght.ttf</string>
+		<string>DancingScript-Bold.ttf</string>
+		<string>DancingScript-Medium.ttf</string>
+		<string>DancingScript-Regular.ttf</string>
+		<string>DancingScript-SemiBold.ttf</string>
+	</array>
 </dict>
 </plist>
