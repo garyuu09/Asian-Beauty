@@ -10,8 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var isIndView = false
     @State var no :Int = 0
-    let infoTextWidht:CGFloat = 300
-    let infoTextHeigh:CGFloat = 200
+    
     var data = Data()
   
     var body: some View {
@@ -31,10 +30,7 @@ struct ContentView: View {
                             {
                                 SecondView(no: $no, isIndView: $isIndView)
                             }
-                            Text(data.thirdInfo3[Country.indo.rawValue])
-                                .frame(width: infoTextWidht, height: infoTextHeigh, alignment: .center)
-                                .minimumScaleFactor(1)
-                                .lineLimit(3)
+                            BeautyInfo(no: Country.indo.rawValue)
                         }
                     }
                     Group{//タイ
@@ -50,10 +46,7 @@ struct ContentView: View {
                                 SecondView(no: $no, isIndView: $isIndView)
                                 
                             }
-                            Text(data.thirdInfo3[Country.thai.rawValue])
-                                .frame(width: infoTextWidht, height: infoTextHeigh, alignment: .center)
-                                .minimumScaleFactor(1)
-                                .lineLimit(3)
+                            BeautyInfo(no: Country.thai.rawValue)
                         }
                     }
                     Group{//フィリピン
@@ -68,10 +61,7 @@ struct ContentView: View {
                             {
                                 SecondView(no: $no, isIndView: $isIndView)
                             }
-                            Text(data.thirdInfo3[Country.Philippines.rawValue])
-                                .frame(width: infoTextWidht, height: infoTextHeigh, alignment: .center)
-                                .minimumScaleFactor(1)
-                                .lineLimit(3)
+                            BeautyInfo(no: Country.Philippines.rawValue)
                         }
                     }
                 }
@@ -104,6 +94,20 @@ struct ChildView: View {
                     .font(.system(size: 14.0))
                     .fontWeight(.thin)
         }
+    }
+}
+
+struct BeautyInfo:View{
+    let data = Data()
+    let no :Int
+    let infoTextWidht:CGFloat = 300
+    let infoTextHeigh:CGFloat = 200
+    var body:some View{
+        Text(data.thirdInfo3[no])
+            .frame(width: infoTextWidht, height: infoTextHeigh, alignment: .center)
+            .minimumScaleFactor(1)
+            .lineLimit(3)
+        
     }
 }
 
